@@ -1,24 +1,24 @@
-#server:
-#  port: 8086
-#
-#spring:
-#  application:
-#    name: authentication-service
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/guest
-#    username: postgres
-#    password: root
-#  flyway:
-#    schemas: public
-#    user: postgres
-#    password: root
-#    enabled: true
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8083/eureka
-#guest-service:
-#  name: guest-service
-#  path:
-#    host: /api/guest
-#    get-account-by-email: /auth
+server:
+  port: 8086
+
+spring:
+  application:
+    name: authentication-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/guest
+    username: postgres
+    password: root
+  flyway:
+    schemas: public
+    user: postgres
+    password: root
+    enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka
+guest-service:
+  name: guest-service
+  path:
+    host: /api/guest
+    get-account-by-email: /auth
